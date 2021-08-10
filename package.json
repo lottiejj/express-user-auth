@@ -1,7 +1,7 @@
 {
   "name": "user-auth",
   "version": "1.0.0",
-  "description": "",
+  "description": "```sh\r $ git clone git@github.com:digital-futures-academy/user-auth.git && cd user-auth\r $ npm install\r $ npx sequelize-cli db:create\r $ npx sequelize-cli db:migrate\r $ npm start\r ```",
   "main": "index.js",
   "scripts": {
     "start": "npx nodemon app.js",
@@ -22,9 +22,19 @@
     "sequelize": "^6.6.5",
     "sequelize-cli": "^6.2.0"
   },
-  "_id": "user-auth@1.0.0",
   "devDependencies": {
     "cypress": "^8.2.0",
     "nodemon": "^2.0.12"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lottiejj/express-user-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lottiejj/express-user-auth/issues"
+  },
+  "homepage": "https://github.com/lottiejj/express-user-auth#readme"
 }

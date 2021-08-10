@@ -4,7 +4,7 @@ const port = 3000
 const session = require('express-session')
 const methodOverride = require('method-override')
 const expressLayouts = require('express-ejs-layouts');
-
+const dotenv = require('dotenv').config();
 const { User } = require('./models')
 
 const registrationsRouter = require('./routers/registrations.js')
@@ -52,6 +52,7 @@ app.get('/', (req, res) => {
 app.get('/top-secret', authenticator, (req, res) => {
   res.render('top-secret')
 })
+console.log(process.env.DB_PASSWORD);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
